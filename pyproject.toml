@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "at3-experiments-group30"
+version = "0.1.0"
+description = "Experimentation repo for AT3 cryptocurrency ML project"
+authors = [
+    "Parth Tiwari <parth.tiwari-1@student.uts.edu.au>",
+    "Ananya Srinivas <ananya.srinivas@example.com>",
+    "Saurabh Sabharwal <saurabh.sabharwal@example.com>",
+    "Kankshi Shah <kankshi.shah@example.com>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+scikit-learn = "1.5.1"
+pandas = "2.2.2"
+xgboost = "2.1.0"
+hyperopt = "0.2.7"
+lightgbm = "4.4.0"
+lime = "0.2.0.1"
+wandb = "0.17.4"
+joblib = "1.4.2"
+requests = "*"
+
+[tool.poetry.dev-dependencies]
+jupyterlab = "4.2.3"
+matplotlib = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
