@@ -1,6 +1,6 @@
 # AT3 Data Product Experiments
 
-Experimentation repository for building ML models to predict cryptocurrency prices (Bitcoin, Ethereum, XRP, Solana) using APIs and datasets. This repo follows the Cookiecutter Data Science template for structured data science workflows.
+Experimentation repository for building ML models to predict cryptocurrency prices (Bitcoin, Ethereum, XRP, Solana, Ripple and Tron) using APIs and datasets. This repo follows the Cookiecutter Data Science template for structured data science workflows.
 
 ## Project Organization
 
@@ -50,11 +50,11 @@ Experimentation repository for building ML models to predict cryptocurrency pric
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 ## Setup Instructions
-1. Clone the repo: `git clone https://github.com/parthtiwari1/36120-25SP-group30-experiments.git`
+1. Clone the repo: `git clone https://github.com/parthtiwari1/36120-group30-experiments.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Install your extended custom Python package from AT1 (deployed on TestPyPI): `pip install -i https://test.pypi.org/simple/ [your-package-name]`
 4. Run Jupyter Lab: `jupyter lab`
-5. Store notebooks in `notebooks/` folder using naming: `36120-25SP-group30-[Student ID]-AT3-experiment_[number].ipynb` (e.g., `36120-25SP-group30-123456-AT3-experiment-1.ipynb`)
+5. Store notebooks in `notebooks/` folder using naming: `36120-group30-[Student ID]-AT3-experiment_[number].ipynb` (e.g., `36120-group30-123456-AT3-experiment-1.ipynb`)
 6. Save best models in `models/` folder.
 7. For environment setup, ensure Python 3.11.4 is used (e.g., via virtualenv: `virtualenv -p python3.11 env; source env/bin/activate` or conda).
 
