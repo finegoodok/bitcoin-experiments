@@ -73,10 +73,23 @@ target/
 .spyproject/
 
 # Jupyter NB Checkpoints
-.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 
 # exclude data from source control by default
-/data/
+data/*
+!data/.gitkeep
+
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/external/*
+!data/external/.gitkeep
+
+data/interim/*
+!data/interim/.gitkeep
 
 # Mac OS-specific storage files
 .DS_Store
