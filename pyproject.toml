@@ -7,7 +7,7 @@ name = "36120-group30-experiments"
 version = "0.0.1"
 description = "A short description of the project."
 authors = [
-  { name = "Saurabh Sabharwal" },
+  { name = "Ananya Srinivas" },
 ]
 
 readme = "README.md"
