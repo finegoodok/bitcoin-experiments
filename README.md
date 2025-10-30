@@ -1,6 +1,6 @@
 # AT3 Data Product Experiments
 
-Experimentation repository for building ML models to predict cryptocurrency prices (Bitcoin, Ethereum, XRP, Solana, Ripple and Tron) using APIs and datasets. This repo follows the Cookiecutter Data Science template for structured data science workflows.
+Experimentation repository for building ML models to predict cryptocurrency prices (Bitcoin, Ethereum, XRP, Solana) using APIs and datasets. This repo follows the Cookiecutter Data Science template for structured data science workflows.
 
 ## Project Organization
 
