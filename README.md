@@ -3,6 +3,7 @@
 Experimentation repository for building ML models to predict cryptocurrency prices (Bitcoin, Ethereum, XRP, Solana) using APIs and datasets. This repo follows the Cookiecutter Data Science template for structured data science workflows.
 
 ## Project Organization
+'''
 ├── LICENSE <- Open-source license if one is chosen
 ├── Makefile <- Makefile with convenience commands like make data or make train
 ├── README.md <- The top-level README for developers using this project.
@@ -44,5 +45,6 @@ Experimentation repository for building ML models to predict cryptocurrency pric
 │ ├── predict.py <- Code to run model inference with trained models
 │ └── train.py <- Code to train models
 └── plots.py <- Code to create visualizations
+'''
 
 Project based on the [cookiecutter data science project template](https://drivendata.github.io/cookiecutter-data-science/). #cookiecutterdatascience
