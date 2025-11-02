@@ -50,3 +50,4 @@ Experimentation repository for building ML models to predict cryptocurrency pric
     │
     └── plots.py                <- Code to create visualizations
 
+Project based on the [cookiecutter data science project template](https://drivendata.github.io/cookiecutter-data-science/). #cookiecutterdatascience
