@@ -2,31 +2,31 @@
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[project]
+[tool.poetry]
 name = "36120-group30-experiments"
 version = "0.0.1"
-description = "A short description of the project."
-authors = [
-  { name = "Saurabh Sabharwal" },
-]
-
+description = "Main repo for Assignment 3 - Advanced ML"
+authors = ["Saurabh Sabharwal"]
 readme = "README.md"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    
-]
-dependencies = [
-    "loguru",
-    "mkdocs",
-    "pip",
-    "pytest",
-    "python-dotenv",
-    "ruff",
-    "tqdm",
-    "typer",
-]
-requires-python = "==3.11.4"
+package-mode = false  # disables package install, use Poetry only for dependency mgmt
 
+[tool.poetry.dependencies]
+python = "==3.11.4"
+pandas = "^2.2.2"
+loguru = "*"
+mkdocs = "*"
+pip = "*"
+pytest = "*"
+python-dotenv = "*"
+ruff = "*"
+tqdm = "*"
+typer = "*"
+jupyter = ">=1.1.1,<2.0.0"
+lab = ">=8.5,<9.0"
+
+[tool.poetry.group.dev.dependencies]
+# optional section for dev-only tools (use if you wish)
+pytest-cov = "^5.0.0"
 
 [tool.ruff]
 line-length = 99
@@ -34,9 +34,8 @@ src = ["36120-group30-experiments"]
 include = ["pyproject.toml", "36120-group30-experiments/**/*.py"]
 
 [tool.ruff.lint]
-extend-select = ["I"]  # Add import sorting
+extend-select = ["I"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["36120-group30-experiments"]
 force-sort-within-sections = true
-
