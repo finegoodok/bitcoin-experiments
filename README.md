@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-A short description of the project.
+This repo consists of model artefacts and experiments file done by Group 30.
 
 ## Project Organization
 
