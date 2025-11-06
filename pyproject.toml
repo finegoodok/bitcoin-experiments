@@ -1,42 +1,53 @@
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[project]
+[tool.poetry]
 name = "36120-group30-experiments"
 version = "0.0.1"
-description = "A short description of the project."
-authors = [
-  { name = "Ananya Srinivas" },
-]
-
+description = "Experimentation for Ethereum next-day high price prediction using ElasticNet and LightGBM"
+authors = ["Ananya"]
 readme = "README.md"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    
-]
-dependencies = [
-    "loguru",
-    "mkdocs",
-    "pip",
-    "pytest",
-    "python-dotenv",
-    "ruff",
-    "tqdm",
-    "typer",
-]
-requires-python = "==3.11.4"
+package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.11"
 
-[tool.ruff]
-line-length = 99
-src = ["36120-group30-experiments"]
-include = ["pyproject.toml", "36120-group30-experiments/**/*.py"]
+# Core ML and data libraries
+scikit-learn = "1.5.1"
+pandas = "2.2.2"
+numpy = "*"
+xgboost = "2.1.0"
+lightgbm = "4.4.0"
+hyperopt = "0.2.7"
+lime = "0.2.0.1"
+statsmodels = "0.14.5"
+dill = "0.4.0"
+joblib = "1.4.2"
 
-[tool.ruff.lint]
-extend-select = ["I"]  # Add import sorting
+# Experiment tracking and visualization
+wandb = "0.17.4"
+streamlit = "1.36.0"
 
-[tool.ruff.lint.isort]
-known-first-party = ["36120-group30-experiments"]
-force-sort-within-sections = true
+# Web framework
+fastapi = "0.111.0"
+uvicorn = "0.30.1"
+requests = "*"
 
+# Utility and packaging
+click = "*"
+Sphinx = "*"
+coverage = "*"
+awscli = "*"
+flake8 = "*"
+python-dotenv = ">=0.5.1"
+loguru = "*"
+mkdocs = "*"
+pytest = "*"
+ruff = "*"
+tqdm = "*"
+typer = "*"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "4.2.3"
+matplotlib = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
